@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>io.github.nahkd123</groupId>
+	<artifactId>bukkitcommandkit</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Bukkit Command Kit</name>
+	<description>Annotations processing magic, completely cut off the need for
+		reflection!</description>
+	<properties>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<packaging>pom</packaging>
+	<modules>
+		<module>bukkitcommandkit-annotations</module>
+		<module>bukkitcommandkit-demo-plugin</module>
+	</modules>
+	<repositories>
+		<repository>
+			<id>spigot-repo</id>
+			<url>https://hub.spigotmc.org/nexus/content/repositories/snapshots</url>
+		</repository>
+	</repositories>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.spigotmc</groupId>
+				<artifactId>spigot-api</artifactId>
+				<version>1.20.4-R0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.auto.service</groupId>
+				<artifactId>auto-service</artifactId>
+				<version>1.1.1</version>
+			</dependency>
+			<dependency>
+				<groupId>io.github.nahkd123</groupId>
+				<artifactId>bukkitcommandkit-annotations</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>io.github.nahkd123</groupId>
+				<artifactId>bukkitcommandkit-processor</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>

@@ -1,0 +1,10 @@
+name: MyPlugin
+description: Demostrate annotation processing power of nahkd's BukkitCommandKit
+author: nahkd123
+version: 1.0.0
+main: io.github.nahkd123.bukkitcommandkit.demo.MyPlugin
+api-version: 1.13
+
+commands:
+  mycommand:
+    usage: "/mycommand"

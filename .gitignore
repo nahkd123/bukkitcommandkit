@@ -1,0 +1,14 @@
+/.settings/
+/.classpath
+/.project
+/.factorypath
+/.apt*
+/target
+
+# Modules
+/*/.settings
+/*/.classpath
+/*/.project
+/*/.factorypath
+/*/.apt*
+/*/target
