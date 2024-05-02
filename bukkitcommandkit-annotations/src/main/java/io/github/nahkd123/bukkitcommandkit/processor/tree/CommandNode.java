@@ -174,7 +174,8 @@ public interface CommandNode {
 				candidates.stream().map(c -> indent + "candidates.add(\"" + c + "\");"),
 				tabCompleteMethods.stream().map(m -> indent + m + "($, $start, candidates::add);"),
 				Stream.of(
-					indent + "return candidates.stream().filter(s -> s.startsWith($[$start.get()])).toList();",
+					indent
+						+ "return candidates.stream().filter(s -> s.startsWith($[$start.get()])).collect(java.util.stream.Collectors.toList());",
 					"}"));
 		}
 
